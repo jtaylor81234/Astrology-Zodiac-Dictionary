@@ -89,8 +89,9 @@ function getData(){
 	var userSearch = document.getElementById('user-search').value.toLowerCase();
 	for(var i = 0; i< zodiacs.length; i++){
 		if (userSearch === zodiacs[i].name.toLowerCase()){
-			document.getElementById('img').src = zodiacs[i].image;
+			document.getElementById('name').innerHTML = zodiacs[i].name;
 			document.getElementById('month-result').innerHTML = zodiacs[i].month;
+			document.getElementById('img').src = zodiacs[i].image;
 			document.getElementById('text-result').innerHTML = zodiacs[i].description; 
 		}
 		else
